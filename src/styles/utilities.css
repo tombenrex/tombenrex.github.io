@@ -1,0 +1,29 @@
+/* Small utilities to keep JSX classes minimal */
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section > .container > h2 {
+  font-size: var(--step-3);
+  margin: 0 0 var(--space-4);
+}
+
+/* Print tweaks for CV */
+@media print {
+  .nav,
+  .footer,
+  .hero,
+  #projects,
+  #skills,
+  #contact {
+    display: none !important;
+  }
+  #cv {
+    padding-top: 0;
+  }
+  .cv-embed object {
+    height: 95vh;
+  }
+}

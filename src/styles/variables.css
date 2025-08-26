@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --bg: #0b1220;
+  --surface: #121a2a;
+  --text: #e9eef8;
+  --muted: #a8b3c7;
+  --brand: #2ecc71; /* Hammarby-grön vibe */
+  --brand-ink: #0e3d22;
+  --border: #22304b;
+
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+
+  /* Fluid type scale */
+  --step--1: clamp(0.85rem, 0.79rem + 0.25vw, 0.95rem);
+  --step-0: clamp(1rem, 0.92rem + 0.4vw, 1.1rem);
+  --step-1: clamp(1.2rem, 1.07rem + 0.6vw, 1.35rem);
+  --step-2: clamp(1.44rem, 1.26rem + 0.87vw, 1.62rem);
+  --step-3: clamp(1.73rem, 1.49rem + 1.22vw, 1.94rem);
+  --step-4: clamp(2.07rem, 1.75rem + 1.68vw, 2.33rem);
+  --step-5: clamp(2.49rem, 2.06rem + 2.29vw, 2.8rem);
+
+  /* Layout */
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --container: 1100px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 72px;
+}
+
+html[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f7f9fc;
+  --text: #0a0e17;
+  --muted: #4b5565;
+  --brand: #2ecc71;
+  --brand-ink: #0e3d22;
+  --border: #e5e9f2;
+}
