@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Github, Globe, Home, Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function MainPage() {
   // Animations
@@ -69,27 +70,54 @@ export default function MainPage() {
               <h2 className="font-semibold text-lg mb-2 border-b border-white/30">
                 Contact
               </h2>
-              <ul className="text-sm space-y-1">
-                <li>
-                  ✉️{' '}
+              <ul className="text-sm space-y-2">
+                <li className="flex items-center gap-2">
+                  <Mail size={16} className="text-white" />
                   <a href="mailto:tmlsn@hotmail.com" className="underline">
                     tmlsn@hotmail.com
                   </a>
                 </li>
-                <li>📱 072&nbsp;212&nbsp;13&nbsp;01</li>
-                <li>
-                  🌐{' '}
-                  <a className="underline" href="https://github.com/tombenrex">
-                    github.com/tombenrex
+                <li className="flex items-center gap-2">
+                  <Phone size={16} className="text-white" />
+                  072&nbsp;212&nbsp;13&nbsp;01
+                </li>
+                <li className="flex items-center gap-2">
+                  <Github size={16} className="text-white" />
+                  <a
+                    className="underline"
+                    href="https://github.com/tombenrex"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    tombenrex
                   </a>
                 </li>
-                <li>
-                  🔗{' '}
-                  <a className="underline" href="https://linkedin.com/in/tmlsn">
-                    linkedin.com/in/tmlsn
+                <li className="flex items-center gap-2">
+                  <Linkedin size={16} className="text-white" />
+                  <a
+                    className="underline"
+                    href="https://linkedin.com/in/tmlsn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    tmlsn
                   </a>
                 </li>
-                <li>🏠 Vansö Kinger 1, 645&nbsp;92 Strängnäs</li>
+                <li className="flex items-center gap-2">
+                  <Globe size={16} className="text-white" />
+                  <a
+                    className="underline"
+                    href="https://tombenrex.me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    tombenrex.me
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Home size={16} className="text-white" />
+                  Vansö Kinger 1, 645&nbsp;92 Strängnäs
+                </li>
               </ul>
             </motion.section>
 

@@ -7,14 +7,14 @@ import globals from 'globals';
 export default defineConfig([
   globalIgnores(['dist']),
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
     ],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
       globals: globals.browser,
       parserOptions: {
         ecmaVersion: 'latest',
@@ -23,7 +23,11 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_] | ^motion$' }],
+      // Tillåt att JSX-komponenter (börjar med versal) och motion används
+      'no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^(motion|[A-Z][a-zA-Z0-9]*)' },
+      ],
     },
   },
 ]);
