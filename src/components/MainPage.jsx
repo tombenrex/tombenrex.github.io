@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Github, Globe, Home, Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function MainPage() {
-  // Animations
   const fadeUp = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -20,7 +19,7 @@ export default function MainPage() {
     <motion.main
       initial="hidden"
       animate="show"
-      className="min-h-screen bg-white text-gray-900 flex justify-center"
+      className="min-h-screen flex justify-center"
     >
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-[0.36fr,1fr] gap-8 p-6 md:p-10">
         {/* Vänsterspalt (cvblue) */}
@@ -58,10 +57,9 @@ export default function MainPage() {
                 Profile
               </h2>
               <p className="text-sm leading-relaxed">
-                Frontend developer student with a passion for clean,
-                user-friendly interfaces, open-source technologies and
-                automation. Strong background in problem-solving, teamwork and
-                technical support.
+                Developer student with a passion for clean, user-friendly
+                interfaces, open-source technologies and automation. Strong
+                background in problem-solving, teamwork and technical support.
               </p>
             </motion.section>
 
@@ -113,10 +111,6 @@ export default function MainPage() {
                   >
                     tombenrex.me
                   </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Home size={16} className="text-white" />
-                  Vansö Kinger 1, 645&nbsp;92 Strängnäs
                 </li>
               </ul>
             </motion.section>
@@ -178,7 +172,7 @@ export default function MainPage() {
         <div className="flex flex-col gap-10">
           {/* Experience */}
           <motion.section variants={slideRight}>
-            <h2 className="text-2xl font-bold text-[#304263] border-b-2 border-[#304263] pb-1 mb-5">
+            <h2 className="text-2xl font-bold border-b-2 border-[#304263] pb-1 mb-5">
               Experience
             </h2>
 
@@ -201,30 +195,6 @@ export default function MainPage() {
                   place: 'Jourbilsgruppen i Sverige AB',
                   period: '2019–2021',
                   desc: 'Conducted inspections, wrote documentation and supported customers with 50% on-call duty.',
-                },
-                {
-                  role: 'Remediation Technician',
-                  place: 'Avfuktningsteknik, Södertälje',
-                  period: '2019',
-                  desc: 'Performed mold remediation in crawl spaces and attics, including drilling and installation of ventilation systems.',
-                },
-                {
-                  role: 'Mover',
-                  place: 'Davéns & Flyttekspressen, Södertälje/Enköping',
-                  period: '2018–2019',
-                  desc: 'Assisted with relocations, furniture assembly and office moves.',
-                },
-                {
-                  role: 'Building Advisor',
-                  place: 'Beijer Byggmaterial, Strängnäs',
-                  period: '2018',
-                  desc: 'Advised customers on materials and managed sales, logistics and stock.',
-                },
-                {
-                  role: 'Carpenter',
-                  place: 'Skanska, Stockholm',
-                  period: '2011–2018',
-                  desc: 'Worked on new construction and renovation of apartments, from apprenticeship to certified carpenter.',
                 },
               ].map((job, i) => (
                 <motion.div
@@ -285,25 +255,6 @@ export default function MainPage() {
                   <li>Thesis project</li>
                 </ul>
               </div>
-            </motion.div>
-
-            {/* Construction Technology — Teknikgymnasiet */}
-            <motion.div variants={fadeUp} className="space-y-2">
-              <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-                <h3 className="font-semibold">
-                  Construction Technology —{' '}
-                  <span className="italic">Teknikgymnasiet</span>
-                </h3>
-                <div className="text-right">
-                  <div className="font-bold">2009–2011</div>
-                  <div className="text-xs italic text-[#304263]">
-                    Previous Education
-                  </div>
-                </div>
-              </div>
-              <p className="text-sm text-gray-700">
-                Vocational upper secondary education specializing in carpentry.
-              </p>
             </motion.div>
           </motion.section>
         </div>
