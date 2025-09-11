@@ -2,6 +2,10 @@
 
 A modern, responsive personal portfolio website built with React + Vite featuring a clean CV layout and project showcase.
 
+## 🚀 Live Site
+
+Visit the live site at: [https://tombenrex.github.io](https://tombenrex.github.io)
+
 ## Tech Stack
 
 - **React 19** - UI library
